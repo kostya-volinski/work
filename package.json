@@ -1,5 +1,5 @@
 {
-  "name": "simple_gulp",
+  "name": "html",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,17 +11,12 @@
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^6.1.0",
-    "gulp-jshint": "^2.1.0",
-    "gulp-minify-css": "^1.2.4",
+    "gulp-imagemin": "^6.0.0",
     "gulp-rigger": "^0.5.8",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglify": "^3.0.2",
-    "jshint-stylish": "^2.2.1",
     "node-sass": "^4.12.0"
   },
   "dependencies": {
-    "bower": "^1.8.8"
+    "gulp-cssimport": "^7.0.0",
+    "gulp-sass": "^4.0.2"
   }
 }

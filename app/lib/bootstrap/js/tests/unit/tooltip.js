@@ -1146,7 +1146,7 @@ $(function () {
       .bootstrapTooltip({
         template: [
           '<div>',
-          '  <img src="x" onError="alert(\'test\')">Some content</img>',
+          '  <images src="x" onError="alert(\'test\')">Some content</images>',
           '</div>'
         ].join('')
       })

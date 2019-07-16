@@ -1,16 +1,14 @@
 {
-  "name": "simple_gulp",
+  "name": "html",
   "description": "",
   "main": "index.js",
-  "authors": [
-    "Your Name <you@example.com>"
-  ],
   "license": "ISC",
-  "homepage": "https://github.com/kostya-volinski/home",
+  "homepage": "",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
+    "components",
     "test",
     "tests"
   ]

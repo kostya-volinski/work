@@ -634,7 +634,7 @@ $(function () {
     var done = assert.async()
 
     // This toggle button contains XSS payload in its data-target
-    // Note: it uses the onerror handler of an img element to execute the js, because a simple script element does not work here
+    // Note: it uses the onerror handler of an images element to execute the js, because a simple script element does not work here
     //       a script element works in manual tests though, so here it is likely blocked by the qunit framework
     var $toggleBtn = $('<button data-toggle="modal" data-target="&lt;div&gt;&lt;image src=&quot;missing.png&quot; onerror=&quot;$(&apos;#qunit-fixture button.control&apos;).trigger(&apos;click&apos;)&quot;&gt;&lt;/div&gt;"/>')
       .appendTo('#qunit-fixture')

@@ -1,7 +1,5 @@
-// = /lib/bootstrap
-// = /lib/jquery
-// = /lib/slick-carousel
-
-console.log('test2');
+//= ../lib/jquery/dist/jquery.js
+//= ../lib/bootstrap/dist/js/bootstrap.js
+//=../lib/slick-carousel/slick/slick.js
 
 

@@ -1,5 +1,28 @@
-// = /lib/bootstrap
-// = /lib/jquery
-// = /lib/slick-carousel
+$(document).ready(function () {
+    $('#container-fluid').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4500,
+        arrows : false,
+        cssEase: 'linear',
+        prevArrow: '<img src="тут ссылка на левую картинку">',
+        nextArrow: '<img src="тут ссылка на правую картинку">'
+    });
 
-console.log('test2');
+});
+
+
+$(document).ready(function () {
+    $('.carousel').slick({
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        autoplay: true,
+        autoplaySpeed: 4500,
+        arrows : false,
+        cssEase: 'linear',
+        prevArrow: '<img src="тут ссылка на левую картинку">',
+        nextArrow: '<img src="тут ссылка на правую картинку">'
+    });
+
+});
