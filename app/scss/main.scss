@@ -1,6 +1,6 @@
 body {
   margin: 0 0;
-  width: 1920px;
+  width: 100%;
   height: 3682px;
   background-color: #ffffff;
   padding: 0 0;
@@ -17,6 +17,11 @@ ul {
   display: flex;
 }
 
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  width: 100%;
+}
 
 .head {
   display: flex;
@@ -54,8 +59,14 @@ ul {
   font-weight: bold;
 }
 
-#phone a {
-  text-decoration: red;
+.phone a {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.88;
+  letter-spacing: 1px;
+  color: #1a1a1a;
 }
 
 .left-menu {
@@ -78,6 +89,7 @@ ul {
 .logo {
   align-items: center;
   padding-right: 30px;
+  margin-left: 25px;
 }
 
 .right-menu {
@@ -87,20 +99,40 @@ ul {
   align-items: center;
 }
 
+.icon-magnifying-glass {
+  font-size: 24px;
+}
+
+.icon-heart {
+  font-size: 24px;
+}
+
+.icon-shopping-bag {
+  font-size: 24px;
+}
+
+.icon-user {
+  font-size: 24px;
+}
+
 .right-menu .search {
   margin-right: 20px;
 }
 
+
 .right-menu .heart {
   margin-right: 20px;
+  font-size: 1.5em;
 }
 
 .right-menu .shop {
   margin-right: 20px;
+  font-size: 1.5em;
 }
 
 .right-menu .user {
   margin-right: 20px;
+  font-size: 1.5em;
 }
 
 .cur {
@@ -150,6 +182,7 @@ ul {
 
 
 .pro {
+  margin-left: 6rem;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -205,39 +238,131 @@ ul {
   margin-left: 30px;
 }
 
+
+.slick-slide {
+  height:380px;
+}
+
+.slick-slide img {
+  height:380px;
+}
+
+.slick-dots li.slick-active {
+  background-color: #1a1a1a;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+
+
+.slick-dots li {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0px 5px;
+}
+
+
 .carousel {
   display: flex;
   justify-content: center;
-
+  margin-bottom: 180px;
 }
 
-.slick-slider {
+.carousel-list {
+  display: flex;
+  max-width: 1140px;
+  justify-content: center;
+}
+
+.carousel .slick-dots li.slick-active {
+  background-color: #1a1a1a;
+}
+
+.carousel .slick-dots {
+  height: 60px;
+  bottom: -60px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
-
+  align-items: flex-end;
 }
 
-.con {
-  display: flex;
+.carousel .slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
 }
 
-.bord-next a{
-  text-decoration: none;
+.carousel .slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
 }
 
-.bord-next a:hover {
-  text-decoration: none;
 
+
+.carousel .slick-dots li {
+  width: 8px;
+  height: 8px;
+  background-color: #cccccc;
+  border-radius: 50%;
+  margin: 0px 5px;
 }
 
-.icon {
+
+.label_item {
   width: 45px;
   height: 45px;
   background-color: #f6f4f4;
-  margin: 15px 15px;
-  align-items: center;
-  display: flex;
-  justify-content: center;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -246,28 +371,33 @@ ul {
   letter-spacing: normal;
   text-align: center;
   color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 15px;
 }
 
+.bord-next {
+  border: solid 1px #e6e6e6;
+  margin-right: 30px;
+  max-width: 263px;
+  max-height: 100%;
+}
 
-.bord a{
-  text-decoration: none;
+.bord-next a {
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1;
   letter-spacing: 1px;
+  text-align: center;
   color: #1a1a1a;
-  justify-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
 }
 
-.bord a:hover{
-  text-decoration: none;
-  color: red;
-}
-
-
-.carousel p {
+.bord-next p {
   font-size: 16px;
   font-weight: bold;
   font-style: normal;
@@ -279,21 +409,32 @@ ul {
   margin-top: 14px;
 }
 
-.rectangle {
-  height: 265px;
-  background-color: #f6f4f4;
-  margin-top: 128px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.label {
+  height: 100%;
+  text-align: center;
 }
 
+.label a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+.bord-next img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  display: block;
+}
+
+.rect span{
+  font-size: 45px;
+}
 
 
 .rect {
   justify-content: center;
   text-align: center;
-  height: 60%;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -302,8 +443,8 @@ ul {
   letter-spacing: 2px;
   color: #1a1a1a;
   border-right: solid 1px #e6e6e6;
-  padding-right: 20px;
-  margin-right: 20px;
+  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .rect:last-child{
@@ -319,7 +460,8 @@ ul {
 }
 
 .rect img{
-  margin-bottom: 24px;
+  margin-bottom: 15px;
+  height: 38px;
 }
 
 .rect p {
@@ -335,6 +477,7 @@ ul {
 }
 
 .rectangle {
+  margin-top: 30px;
   margin-bottom: 60px;
   display: flex;
   justify-content: center;
@@ -362,17 +505,14 @@ ul {
 
 .news {
   display: flex;
-  height: 400px;
+
 }
 
 .left-news{
   margin-right: 30px;
-  height: 118px;
+
 }
 
-.right-news {
-  height: 118px;
-}
 
 .post-news {
   text-align: center;
@@ -509,21 +649,20 @@ ul {
   margin-bottom: 60px;
 }
 
-.container-fl {
-  display: flex;
-  padding: 0 0;
-  margin: 0 0;
-  width: 920px;
-  justify-content: space-between;
-}
+
 
 .img-front {
   padding: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   flex-wrap: nowrap;
   margin-bottom: 73px;
+}
+
+.img-front img {
+  overflow: no-content;
+  max-height: 160px;
+  width: auto;
 }
 
 .front {
@@ -638,6 +777,10 @@ input {
   justify-content: flex-start;
 }
 
+.contacts a:hover {
+  color: red;
+}
+
 .contacts img{
   width: auto;
   height: 25px;
@@ -645,7 +788,13 @@ input {
   margin-top: 33px;
 }
 
+.foot {
+  display: flex;
+  width: 100%;
+}
+
 .r {
+  width: 100%;
   font-size: 12px;
   font-weight: normal;
   font-style: normal;
@@ -654,4 +803,22 @@ input {
   letter-spacing: normal;
   color: #1a1a1a;
   margin-bottom: 21px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.l {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-f {
+  position: fixed;
+  right: 0;
+  bottom:   0;
+  align-items: flex-end;
+  overflow:auto;
+  padding-right: 15px;
+  padding-bottom: 15px;
 }
